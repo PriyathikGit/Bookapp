@@ -1,0 +1,150 @@
+.heading {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.banner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+select{
+  height: 40px;
+}
+.author{
+    font-size: 24px;
+  color: #333;
+  border-right: 1px solid black;
+  width: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+  margin: 10px 0; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  height: 10vh;
+  width: 52vw;
+  border: 1px solid black;
+  display: flex;
+}
+
+.main-container:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+.serial-number {
+  border-right: 2px solid;
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serial {
+  padding: 0 5px;
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-right: 1px solid black;
+  width: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+    font-weight: bold;
+  border-right: 2px solid;
+  width: 30rem;
+  font-size: 20px;
+  padding: 0 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.publish-year {
+    border-right: 2px solid;
+  width: 10rem;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 5rem;
+}
+
+.rating{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    margin-top: 5px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .pagination button {
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .pagination button[disabled] {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  @media screen and (max-width:600px) {
+    .main-container{
+      width: 100vw;
+      height: 100px;
+    }
+
+    .title{
+      font-size: 14px;
+      text-wrap: wrap;
+    }
+    .serial{
+      text-wrap: wrap;
+    }
+    .publish-year{
+      width: 30rem;
+      padding: 0;
+      font-size: 14px;
+      
+    }
+  }
